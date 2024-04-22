@@ -7,7 +7,7 @@
     "build": "tsc",
     "start": "npm run build && node dist/src/index.js",
     "start-dev": "ts-node-dev 'src/index.ts'",
-    "lint": "eslint src/**/*.ts",
+    "lint": "eslint \"src/**/*.ts\" \"test/**/*.ts\"",
     "lint-fix": "eslint ./src ./test --ext .ts --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
     "test-functional": "jest --projects ./test --runInBand"
